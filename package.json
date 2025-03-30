@@ -1,9 +1,18 @@
 {
+  "scripts": {
+    "start": "tsx index.ts",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "npx drizzle-kit migrate"
+  },
   "devDependencies": {
     "tsx": "^4.19.3"
   },
   "dependencies": {
+    "cohere-ai": "^7.16.0",
     "dotenv": "^16.4.7",
-    "openai": "^4.90.0"
+    "drizzle-kit": "^0.30.6",
+    "drizzle-orm": "^0.41.0",
+    "openai": "^4.90.0",
+    "postgres": "^3.4.5"
   }
 }
