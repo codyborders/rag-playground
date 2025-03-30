@@ -1,3 +1,4 @@
+import { domainToASCII } from "url";
 import { openai } from "./api-client-config";
 
 export async function generateEmbeddings(texts: string[]) {
@@ -12,4 +13,3 @@ export async function generateEmbeddings(texts: string[]) {
   
     return response.data.map((item) => item.embedding);
   }
-  
